@@ -8,8 +8,8 @@ var hogan = require('hogan-express')
 app.engine('html', hogan)
 // views dir, but we don't use it
 app.set('views', __dirname + '/')
-// listen to 3000
-app.set('port', process.env.PORT || 3000)
+// listen to 8009
+app.set('port', process.env.PORT || 8009)
 // public dir
 app.use(express.static(__dirname + '/public'))
 // get index html
